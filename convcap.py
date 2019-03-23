@@ -136,3 +136,10 @@ class convcap(nn.Module):
     x = x.transpose(2, 1)
 
     return x, attn_buffer
+
+if __name__=="__main__":
+
+  conv1 = Conv1d(in_channels=100,out_channels=20,kernel_size=3,padding=0,dropout=0.5)
+  import pdb
+  pdb.set_trace()
+  print(conv1)
